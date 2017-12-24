@@ -22,7 +22,7 @@ PRIORITIES:
 
 4) Clear unecessary css code (L)
 
-5) Fix ads
+5) Fix ads (M)
 
 ------------RESEARCH--------------
 
@@ -35,6 +35,4 @@ PRIORITIES:
 
 3) AMP and dynamic content (H)
 
-4) Whats is GitHub and how to upload Editorial to their Https dev server (D)
-
-5) Finish (D) and review Service Workers Tutorials (H)
+5) Review Service Workers Tutorials (H)
