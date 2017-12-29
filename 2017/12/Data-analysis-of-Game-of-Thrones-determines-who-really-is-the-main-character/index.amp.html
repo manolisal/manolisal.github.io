@@ -2,7 +2,7 @@
 
 <html ⚡ lang='en'>
 	<head>
-		<title>Google Reveals What Searchers Wanted in 2017</title>
+		<title>Data analysis of Game of Thrones determines who really is the main character</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width,minimum-scale=1, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -21,6 +21,7 @@
 		<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 		<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
 		<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+		<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 		<script type="application/ld+json">
 			{
@@ -28,12 +29,12 @@
 			 "@type": "NewsArticle",
 			 "mainEntityOfPage":{
 			   "@type":"WebPage",
-			   "@id":"https://manolisal.github.io/2017/12/Google-Reveals-What-Searchers-Wanted-in-2017/index.html"
+			   "@id":"https://manolisal.github.io/2017/12/Data-analysis-of-Game-of-Thrones-determines-who-really-is-the-main-character/index.html"
 			 },
-			 "headline": "Who Owns The Internet?",
+			 "headline": "Data analysis of Game of Thrones determines who really is the main character",
 			 "image": {
 			   "@type": "ImageObject",
-			   "url": "https://manolisal.github.io/2017/12/Google-Reveals-What-Searchers-Wanted-in-2017/thumb.png",
+			   "url": "https://manolisal.github.io/2017/12/Data-analysis-of-Game-of-Thrones-determines-who-really-is-the-main-character/thumb.png",
 			   "height": 256,
 			   "width": 416
 			 },
@@ -53,16 +54,16 @@
 			     "height": 256
 			   }
 			 },
-			 "description": "Google Reveals What Searchers Wanted in 2017"
+			 "description": "Data analysis of Game of Thrones determines who really is the main character"
 			}
 		</script>
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<script>
 		  (adsbygoogle = window.adsbygoogle || []).push({
 		    google_ad_client: "ca-pub-4180507943274363",
 		    enable_page_level_ads: true
 		  });
-		</script>
+		</script> -->
 	</head>
 	<body>
 		<amp-sidebar id="sidebar" layout="nodisplay" side="left">
@@ -197,73 +198,94 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h2>Google Reveals What Searchers Wanted in 2017</h2>
+										<h2>Publishers are seeing real performance gains from Google AMP and Facebook Instant Articles (but $$$ remains a question mark)</h2>
 									</header>
 
-									<span class="image main"><amp-img src="banner.jpg" width= "620" height="320" layout=responsive alt=""></amp-img></span>
+									<span class="image main"><amp-img src="banner.png" width= "796" height="448" layout=responsive alt=""></amp-img></span>
 
                                     <p class='inf'>By <a href="#">John Doe</a> | <span>Decempber 08 2017 12:08</span></p>
                                     <hr class="major" />
 
-									<!-- <h2>Interdum sed dapibus</h2> -->
-									<p>The iPhone 8 and iPhone X ranked No. 2 and No. 3 respectively in overall searches on Google this year, and No. 1 and No. 2 respectively in the consumer tech search category on the Google Trends Year in Search 2017 list released Tuesday.</p>
+									<p>Game of Thrones has become one of the most epic TV series ever produced and one of the most illegally downloaded shows as well. These type of shows move the needle and that’s the reason why Jeff Bezos wants Amazon to create its own ‘Game of Thrones’.</p>
 
-									<p>Bitcoin ranked No. 2 in global news searches, and "how to buy bitcoin" ranked No. 3 among how-to searches on Google in 2017.</p>
+									<p>It’s popularity has been amazing, especially considering it’s massive cast! Hundreds of characters have appeared on screen, with weird made-up names which most viewers forget as soon as they’ve heard them. We all know our favorites, but who among our favorites is the main character? And what house is the most prominent?</p>
 
-									<p>The Nintendo Switch, Samsung Galaxy S8, and Xbox One X were the third, fourth and fifth most frequently used consumer tech search terms.</p>
+									<p>Sure, you could just go with your gut, or simply don’t waste your time on tedious questions and just enjoy the show. However, I say, why use your gut when you have data? (And I like tedious questions.)</p>
 
-									<p>The lists are based on search terms that had a high spike in traffic in 2017 as compared to 2016.</p>
-                                    
-                                    <amp-ad width=125 height=125
+									<p>There are no official datasets from HBO about Game of Thrones, but fortunately one dedicated IMDB user has manually recorded the screen time of each characters by watching each episode scene by scene and noting the time. I’ve built on the user’s selfless sacrifice to create a dataset of the screen time for each GoT character.</p>
+
+									<h2>DATASET</h2>
+									<p>The IMDB list consists of 200 characters in terms of screen time (minutes and seconds format). I extracted this data and selected only the top 100 characters for this study. The time format was converted to numeric format in the final dataset.</p>
+									                               
+                                    <!-- <p><a href="#" class="ad-image"><amp-img src="../../../images/ads125.png" alt="" width= "125" height="125" layout=responsive ></amp-img></a></p> -->
+
+									<amp-ad width=125 height=125
+									      type="adsense"
+									      data-ad-client="ca-pub-4180507943274363"
+									      data-ad-slot="7046626912"
+									      data-slot="/4119129/doesnt-exist">
+									      <amp-img placeholder src="../../../images/ads125.png" alt="" width= "125" height="125" layout=responsive ></amp-img>								      
+                                          <amp-img fallback src="../../../images/ads125.png" alt="" width= "125" height="125" layout=responsive ></amp-img>
+									</amp-ad>
+
+                                    <hr class="major" />
+                                    <h2>OBJECTIVE</h2>
+									<p>Without looking into the fire of the Lord of Light, I’ll use good old bar charts to visualize the screen time of the characters and their houses. Here are the goals of this extremely scientific study:</p>
+									<ul>
+										<li>Finding out the screen time of the top 100 characters</li>
+										<li>Screen time of the top 10 characters in each season</li>
+										<li>Screen time of the nine primary houses</li>
+										<li>Screen time of the nine primary houses in each season</li>
+										<li>Given below are the visualizations and results of the analysis:</li>
+									</ul>
+
+									<p>Given below are the visualizations and results of the analysis:</p>
+
+                                    <h4>1. Screen time of the top 100 characters</h4>
+
+                                    <span class="image main tall"><amp-img src="chart1.png" alt="" width= "388" height="820" layout=responsive ></amp-img></span>
+									<!-- <hr class="major" /> -->
+                                    <p>It looks like that Jon Snow and Tyrion Lannister are the two most important characters of the epic fantasy series, being almost tied in screen time at the top. After the delightful duo follows the titanic trio — Daenerys Targaryen, Sansa Stark and Cersei Lannister — with their impressive screen time, which shouldn’t really come as a surprise. Awesome characters and great actresses. The average screen time of the top 100 characters stands at 7 minutes and 45 seconds, but our favorite five go way beyond that.</p>
+
+									<p>What’s really interesting about this list is that Ned Stark (played by Sean Bean) is among in the top 15 after seven seasons, despite the fact *SPOILER* he’s killed off in the first season, in episode 9. No wonder his death was a big blow to the fans after investing so much time in one of the most lovable characters. (By the way, there’s a fan theory that suggests Ned Stark might still be alive!).</p>
+									<amp-ad width=125 height=125
 									      type="adsense"
 									      data-ad-client="ca-pub-4180507943274363"
 									      data-ad-slot="7046626912">
 									      <amp-img placeholder src="../../../images/ads125.png" alt="" width= "125" height="125" layout=responsive ></amp-img>
 									</amp-ad>
-                                    
-                                    <amp-youtube data-videoid="vI4LHl4yFuo" layout="responsive" width="560" height="315"></amp-youtube>
 
-                                    <p>"Those issues that directly touch the consumer, or are perceived to do so, will rise in search popularity," said Michael Jude, research manager at Stratecast/Frost & Sullivan.</p>
-									<hr class="major" />
+									<h4>2. Top 10 characters in terms of screen time, by season</h4>
 
-									<h2>A Few Surprises</h2>
-									<p>The findings "probably correlated with the marketing budgets of the various vendors," Jude told TechNewsWorld.</p>
+									<span class="image main"><amp-img src="chart2.png" alt="" width= "796" height="534" layout=responsive ></amp-img></span>
+									<p>Here you can see a visualization of the screen time of the top 10 character by season. Jon Snow certainly seems to be a strong contender for the main character of GoT as he’s always in first or second place — except for season 2 where he doesn’t even come close. Tyrion and, surprisingly, Theon Greyjoy are the biggest characters of that season.</p>
+									<p>However, Jon’s character has only grown since then and has evolved to become one the most vital characters in the last two seasons. Another major character, Daenerys Targaryen (Mother of Dragons, Queen of blahblah, etc.), also started out slow as she didn’t even feature in the top 10 in season 4.</p> 
 
-									<p>However, "I would have thought that some of the tech services -- connected home stuff, automatic backup services, etc. -- would have made the list," he said.</p>
-
-									 
-									<p>The inclusion of the Nintendo Switch came as a surprise to Rob Enderle, principal analyst at the Enderle Group.</p>
-
-									<p>"I would've thought handheld gaming-focused devices went obsolete years ago," he told TechNewsWorld.</p>
-
-									<p>Nintendo "has proven that they have a unique ability to bring concepts back from the dead," Enderle noted. The Nintendo Switch "looks like a crippled tablet in that it doesn't support things most tablets do, but folks really like it as a dedicated gaming device."</p>
-
-									<p>Given the tie-in of Lenovo's Star Wars: Jedi Challenges smartphone-powered augmented reality headset to The Last Jedi, Enderle thought it might make the list, but "I expect it came out too late to get enough search volume to move ahead of the Xbox X or any of the smartphones," he said.</p>
-
-									<p>Still, the AR headset, which is compatible with some iPhones and Android phones, "is selling very well and will go through updates -- so watch it for next year," Enderle predicted.</p>
-
-                                    <amp-ad width=125 height=125
+									<amp-ad width=125 height=125
 									      type="adsense"
 									      data-ad-client="ca-pub-4180507943274363"
 									      data-ad-slot="7046626912">
 									      <amp-img placeholder src="../../../images/ads125.png" alt="" width= "125" height="125" layout=responsive ></amp-img>
 									</amp-ad>
 
-									<hr class="major" />
+                                    <h4>3. Screen time of the nine primary houses</h4>
 
-									<h2>The Bitcoin Boom</h2>
+									<span class="image main"><amp-img src="chart4.png" alt="" width= "796" height="478" layout=responsive ></amp-img></span>
+									<p>Here you can see the nine most important houses of Westeros. Unsurprisingly Stark and Lannister leave all the other houses in the dust. However, it should be noted that Jon Snow *SPOILER SPOILER SPOILER* was categorized as a Stark till the last season, where he’s counted as a Targaryen (aunt sex).</p>
+									<p>This visualization shows that Starks, Lannisters and Targaryens have received the highest amount of screen time while Arryn and Martell have the least. The average screen time for these houses remains close to 12 minutes.</p>
 
-									<p>"Bitcoin has been hyped tremendously in the press as everything from the next universal currency to a hedge against government debt default," Frost's Jude said. "It's no wonder that the general public is starting to take notice."</p>
+									<amp-ad width=125 height=125
+									      type="adsense"
+									      data-ad-client="ca-pub-4180507943274363"
+									      data-ad-slot="7046626912">
+									      <amp-img placeholder src="../../../images/ads125.png" alt="" width= "125" height="125" layout=responsive ></amp-img>
+									</amp-ad>
 
-									<p>Interest in bitcoin and other cryptocurrencies is surging, and various commentators and investors predict bitcoin's price could close in on the $1 million mark.</p>
+                                    <h4>4. Screen time of the nine primary houses by season</h4>
 
-									<p>The Chicago Board Options Exchange launched trading in bitcoin futures Dec. 10 with the ticker symbol "XBT." Trading was halted twice that day as the futures surged.</p>
-
-									<p>The CBOE's bitcoin futures fell 10 percent Wednesday, triggering a two-minute halt to trading.</p>
-
-									<p>The Chicago Mercantile Exchange will launch bitcoin futures trading on Dec. 17.</p>
-
-									<p>"Stories of people starting with (US)$100 of bitcoin and ending up multimillionaires likely contributed to the massive feeding frenzy on the cryptocurrency right now," Enderle suggested. "Anything that looks like a valid get-rich-quick path will almost always get a lot of attention."</p>
+									<span class="image main"><amp-img src="chart5.png" alt="" width= "796" height="534" layout=responsive ></amp-img></span>
+									<p>This chart shows that all every season, excluding 4 and 5, has given the Starks the most screen time. The Lannisters got the lime light in the above-mentioned seasons.</p>
+									<p>Although Daenerys from the house Targaryen is one of the most important characters, her house never got into the top three spot apart from season 1 and season 7. Interesting to note that the last season revolves around only five houses.</p>
 
 									<amp-ad width=125 height=125
 									      type="adsense"
@@ -273,17 +295,15 @@
 									</amp-ad>
 
 									<hr class="major" />
+									<h2>CONCLUSION</h2>
+									<p>This study shows the screen time of the important characters and the associated houses in the Game of Thrones TV show. We saw that Jon Snow has been the primary character all along and the house Stark has enjoyed most of the screen time in comparison to other houses. So it doesn’t matter who’s your favorite, the data says it should be Jon Snow and house Stark!</p>
 
-									<h2>Search Stats as Predictors</h2>
-									<p>Search result statistics might indicate future trends, but given the rapidity of technological change, that might not hold less true for tech products.</p>
+									<p>If you would like to perform analysis please feel free to download the datasets and check out the `R` code used in this study from the following GitHub link.</p>
 
-									<p>Google's 2017 search terms list "indicates point trends and shows that Apple still has a huge base of loyal buyers," Enderle said.</p>
+									<p>Note: Visualizations were created via ggplot2 and R.</p>
 
-									<p>"It shows that in 2018, folks will likely get excited about anything that looks to make them rich, and they likely will still have an affinity for hot consumer devices," he added.</p>
 
-									<p>The search terms list "is a good bellwether, but you can't really predict far into the future with it," Enderle said. "People are mercurial in this regard, and what's hot this month may every well be anything but next month."</p>
-									                                    
-                                    <p><span><strong>Source : </strong><a>https://www.technewsworld.com</a></span></p>
+                                    <p><span><strong>Source : </strong><a>https://thenextweb.com</a></span></p>
 
 									<div class='post-share'>
 										<p><strong>Share this story :</strong></p>
@@ -294,7 +314,6 @@
 										</ul>
 									</div>
 								</section>
-
 						</div>
 					</div>
 	</body>

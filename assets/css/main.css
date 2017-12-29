@@ -2583,11 +2583,15 @@
 					width: 75%;
 					margin:0 auto;
 				}
+				.image.main.tall img {
+					width: 50%;
+					margin:0 auto;
+				}
 
 			}
 			@media screen and (min-width: 481px) and (max-width: 1680px) {
-				.image.main img {
-					width: 75%;
+				.image.main.tall img {
+					width: 50%;
 					margin:0 auto;
 				}
 
