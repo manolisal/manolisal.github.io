@@ -36,3 +36,9 @@ PRIORITIES:
 3) AMP and dynamic content (H)
 
 5) Review Service Workers Tutorials (H)
+
+-------------misc-----------------
+
+1) sitemap
+2) amp cache
+3) display amp pages
