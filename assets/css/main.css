@@ -3530,16 +3530,15 @@
 			margin-bottom: 0;
 		}
 
-		#header .logo {
-			border-bottom: 0;
-			color: inherit;
-			font-family: "Roboto Slab", serif;
-			font-size: 1.4em;
+		#header .logo img {
+			width:90%;
 		}
-
+        
 		#header .icons {
 			text-align: right;
+            
 		}
+
 
 		@media screen and (max-width: 1680px) {
 
