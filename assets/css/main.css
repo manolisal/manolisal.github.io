@@ -3779,3 +3779,68 @@
 			margin-top: 0;
 			padding-top: 0;
 		}
+
+/*About/Contact*/
+	.content-row{
+		max-width: 50%;
+	}
+	/*Desktop*/
+	@media screen and (min-width: 1681px) {
+        .content-row{
+			max-width: 50%;
+		}
+
+	}
+	/*Laptop*/
+	@media screen and (max-width: 1680px) {
+        .content-row{
+			max-width: 70%;
+		}
+		
+	}
+	@media screen and (max-width: 1280px) {
+        .content-row{
+			max-width: 70%;
+		}
+
+	}
+	/*Laptop/Tablet*/
+	@media screen and (min-width: 481px) and (max-width: 1680px) {
+		.content-row{
+			max-width: 80%;
+		}
+	}
+
+	/*Tablet*/
+	@media screen and (max-width: 736px) {
+       .content-row{
+			max-width: 80%;
+		}
+
+	}
+	/*Mobile phone*/
+	@media screen and (max-width: 480px) {
+        .content-row{
+			max-width: 100%;
+		}
+
+	}
+    .fill-btn{
+    	
+    	background-color: #0379C4;
+    	border:none;
+    	color:#fff;
+    	border-radius: .375em;
+    	padding:1em;
+    	cursor:pointer;
+    }
+    .fill-btn:hover{
+    	-webkit-transition: background-color .3s ease-out;
+		  -moz-transition: background-color .3s ease-out;
+		  -o-transition: background-color .3s ease-out;
+		  transition: background-color .3s ease-out;
+    	background-color: #02609c;
+    }
+	.content-field{
+		margin:1em 0.5em;
+	}
