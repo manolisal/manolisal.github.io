@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+
+<html ⚡ lang='en'>
+	<head>
+		<title>HTTPS explained with carrier pigeons</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,minimum-scale=1, initial-scale=1, user-scalable=no" />
+		<meta name="keywords" content="manolis.github.io, manolisal.github, manolisal, HTTPS, explained, with, carrier, pigeons, amp, google, articles, article">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="canonical" href="https://manolisal.github.io/2018/1/HTTPS-explained-with-carrier-pigeons/index.html">
+		<style amp-custom>
+      		.clr,a,a:hover{color:#0379c4}.table-wrapper,pre{-webkit-overflow-scrolling:touch}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,pre code,section{display:block}#menu ul,header p{letter-spacing:.075em}#menu ul a.opener,#menu ul span.opener,.toggle{text-decoration:none;-webkit-tap-highlight-color:rgba(255,255,255,0)}a,abbr,acronym,address,amp-img,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}blockquote,p,pre{margin:0 0 2em}blockquote,em,i{font-style:italic}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}body{-webkit-text-size-adjust:none;-ms-overflow-style:scrollbar;background:#fff}*,:after,:before{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}@media screen and (max-width:480px){body,html{min-width:320px}}body.is-loading *,body.is-loading :after,body.is-loading :before,body.is-resizing *,body.is-resizing :after,body.is-resizing :before{-moz-animation:none;-webkit-animation:none;-ms-animation:none;animation:none;-moz-transition:none;-webkit-transition:none;-ms-transition:none;transition:none}body,input,select,textarea{color:#7f888f;font-family:"Open Sans",sans-serif;font-size:13pt;font-weight:400;line-height:1.65}@media screen and (max-width:1680px){body,input,select,textarea{font-size:11pt}}@media screen and (max-width:1280px){body,input,select,textarea{font-size:10pt}}@media screen and (max-width:360px){body,input,select,textarea{font-size:9pt}}a{-moz-transition:color .2s ease-in-out,border-bottom-color .2s ease-in-out;-webkit-transition:color .2s ease-in-out,border-bottom-color .2s ease-in-out;-ms-transition:color .2s ease-in-out,border-bottom-color .2s ease-in-out;transition:color .2s ease-in-out,border-bottom-color .2s ease-in-out;text-decoration:none}a:hover{border-bottom-color:#0379c4}a:hover strong{color:inherit}b,strong{color:#3d4449;font-weight:600}h1,h2,h3,h4,h5,h6{color:#3d4449;font-family:"Roboto Slab",serif;font-weight:700;line-height:1.5;margin:0 0 1em}h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:inherit;text-decoration:none}h1{font-size:4em;margin:0 0 .5em;line-height:1.3}h2{font-size:1.75em}h3{font-size:1.25em}h4{font-size:1.1em}h5{font-size:.9em}h6{font-size:.7em}@media screen and (max-width:1680px){h1{font-size:3.5em}}@media screen and (max-width:980px){h1{font-size:3.25em}}@media screen and (max-width:736px){h1{font-size:2em;line-height:1.4}h2{font-size:1.5em}}sub,sup{font-size:.8em;position:relative}sub{top:.5em}sup{top:-.5em}code,pre{font-family:"Courier New",monospace;font-size:.9em}blockquote{border-left:solid 3px rgba(210,215,217,.75);padding:.5em 0 .5em 2em}.icon:before,.select-wrapper:before,ul.contact li:before{-webkit-font-smoothing:antialiased;font-style:normal}code{background:rgba(230,235,237,.25);border-radius:.375em;border:1px solid rgba(210,215,217,.75);margin:0 .25em;padding:.25em .65em}pre code{line-height:1.75;padding:1em 1.5em;overflow-x:auto}hr{border:0;border-bottom:solid 1px rgba(210,215,217,.75);margin:2em 0}hr.major{margin:3em 0}.align-left{text-align:left}.align-center{text-align:center}.align-right{text-align:right}article.special,section.special{text-align:center}header p{font-family:"Roboto Slab",serif;font-size:1em;font-weight:400;margin-top:-.5em;text-transform:uppercase}dl dt,label,table th{font-weight:600}.icon:before,.select-wrapper:before,.toggle:before,ul.contact li:before{font-family:FontAwesome;text-transform:none;-moz-osx-font-smoothing:grayscale}header.major>:last-child{border-bottom:solid 3px #0379c4;display:inline-block;margin:0 0 2em;padding:0 .75em .5em 0}header.main>:last-child,label{margin:0 0 1em}form{margin:0 0 2em}label{color:#3d4449;display:block;font-size:.9em}input[type=text],input[type=password],input[type=email],input[type=tel],input[type=search],input[type=url],select,textarea{-moz-appearance:none;-webkit-appearance:none;-ms-appearance:none;appearance:none;background:#fff;border-radius:.375em;border:none;border:1px solid rgba(210,215,217,.75);color:inherit;display:block;outline:0;padding:0 1em;text-decoration:none;width:100%}input[type=text]:invalid,input[type=password]:invalid,input[type=email]:invalid,input[type=tel]:invalid,input[type=search]:invalid,input[type=url]:invalid,select:invalid,textarea:invalid{box-shadow:none}input[type=text]:focus,input[type=password]:focus,input[type=email]:focus,input[type=tel]:focus,input[type=search]:focus,input[type=url]:focus,select:focus,textarea:focus{border-color:#0379c4;box-shadow:0 0 0 1px #0379c4}.select-wrapper{text-decoration:none;display:block;position:relative}.select-wrapper:before{font-weight:400;color:rgba(210,215,217,.75);content:'\f078';display:block;height:2.75em;line-height:2.75em;pointer-events:none;position:absolute;right:0;text-align:center;top:0;width:2.75em}.select-wrapper select::-ms-expand{display:none}input[type=text],input[type=password],input[type=email],input[type=tel],input[type=search],input[type=url],select{height:2.75em}textarea{padding:.75em 1em}input[type=checkbox],input[type=radio]{-moz-appearance:none;-webkit-appearance:none;-ms-appearance:none;appearance:none;display:block;float:left;margin-right:-2em;opacity:0;width:1em;z-index:-1}input[type=checkbox]+label,input[type=radio]+label{text-decoration:none;color:#7f888f;cursor:pointer;display:inline-block;font-size:1em;font-weight:400;padding-left:2.4em;padding-right:.75em;position:relative}input[type=checkbox]+label:before,input[type=radio]+label:before{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:FontAwesome;font-style:normal;font-weight:400;text-transform:none;background:#fff;border:1px solid rgba(210,215,217,.75);content:'';display:inline-block;height:1.65em;left:0;line-height:1.58125em;position:absolute;text-align:center;top:0;width:1.65em}.image,input[type=checkbox]+label:before{border-radius:.375em}.icon,.image,ul.contact li{position:relative}.image.fit,.image.fit amp-img,.image.left amp-img,.image.main,.image.right amp-img{width:100%}input[type=checkbox]:checked+label:before,input[type=radio]:checked+label:before{background:#3d4449;border-color:#3d4449;color:#fff;content:'\f00c'}input[type=checkbox]:focus+label:before,input[type=radio]:focus+label:before{border-color:#0379c4;box-shadow:0 0 0 1px #0379c4}input[type=radio]+label:before{border-radius:100%}::-webkit-input-placeholder{color:#9fa3a6;opacity:1}:-moz-placeholder{color:#9fa3a6;opacity:1}::-moz-placeholder{color:#9fa3a6;opacity:1}:-ms-input-placeholder{color:#9fa3a6;opacity:1}.formerize-placeholder{color:#9fa3a6;opacity:1}.icon{text-decoration:none;border-bottom:none}.icon:before{font-weight:400}.icon>.label{display:none}.image{border:0;display:inline-block}.image amp-img{border-radius:.375em;display:block}.image.left,.image.right{max-width:40%}.image.left{float:left;padding:0 1.5em 1em 0;top:.25em}.image.right{float:right;padding:0 0 1em 1.5em;top:.25em}.image.fit{display:block;margin:0 0 2em}.image.main{display:block;margin:0 0 1em}.image.main amp-img{width:100%;margin:0 auto}@media screen and (min-width:1681px){.image.main amp-img{width:75%;margin:0 auto}}@media screen and (min-width:481px) and (max-width:1680px){.image.main amp-img{width:75%;margin:0 auto}}ol,ul{margin:0 0 2em}a.image{overflow:hidden}a.image amp-img{-moz-transition:-moz-transform .2s ease;-webkit-transition:-webkit-transform .2s ease;-ms-transition:-ms-transform .2s ease;transition:transform .2s ease}a.image:hover amp-img{-moz-transform:scale(1.075);-webkit-transform:scale(1.075);-ms-transform:scale(1.075);transform:scale(1.075)}ol{list-style:decimal;padding-left:1.25em}ol li{padding-left:.25em}ul{list-style:disc;padding-left:1em}#menu ul,ul.actions,ul.alt,ul.contact,ul.icons,ul.pagination{list-style:none}ul li{padding-left:.5em}ul.alt{padding-left:0}ul.alt li{border-top:solid 1px rgba(210,215,217,.75);padding:.5em 0}ul.alt li:first-child{border-top:0;padding-top:0}ul.icons{cursor:default;padding-left:0}ul.icons li{display:inline-block;padding:0 1em 0 0}ul.icons li .icon{color:inherit}ul.icons li .icon:before{font-size:1.25em}ul.contact{padding:0}ul.contact li{text-decoration:none;border-top:solid 1px rgba(210,215,217,.75);margin:1.5em 0 0;padding:1.5em 0 0 3em}ul.actions.fit li>*,ul.actions.vertical li>*{margin-bottom:0}ul.contact li:before{font-weight:400;color:#0379c4;display:inline-block;font-size:1.5em;height:1.125em;left:0;line-height:1.125em;position:absolute;text-align:center;top:1em;width:1.5em}ul.contact li:first-child{border-top:0;margin-top:0;padding-top:0}ul.contact li:first-child:before{top:0}ul.contact li a{color:inherit}ul.actions{cursor:default;padding-left:0}ul.actions li{display:inline-block;padding:0 1em 0 0;vertical-align:middle}ul.actions li:last-child{padding-right:0}ul.actions.small li{padding:0 .5em 0 0}ul.actions.vertical li{display:block;padding:1em 0 0}ul.actions.vertical li:first-child{padding-top:0}ul.actions.vertical.small li{padding:.5em 0 0}ul.actions.vertical.small li:first-child{padding-top:0}ul.actions.fit{display:table;margin-left:-1em;padding:0;table-layout:fixed;width:calc(100% + 1em)}ul.actions.fit li{display:table-cell;padding:0 0 0 1em}ul.actions.fit.small{margin-left:-.5em;width:calc(100% + .5em)}ul.actions.fit.small li{padding:0 0 0 .5em}ul.pagination{cursor:default;padding-left:0}ul.pagination li{display:inline-block;padding-left:0;vertical-align:middle}ul.pagination li>.page{-moz-transition:background-color .2s ease-in-out,color .2s ease-in-out;-webkit-transition:background-color .2s ease-in-out,color .2s ease-in-out;-ms-transition:background-color .2s ease-in-out,color .2s ease-in-out;transition:background-color .2s ease-in-out,color .2s ease-in-out;border-bottom:0;border-radius:.375em;display:inline-block;font-size:.8em;font-weight:600;height:2em;line-height:2em;margin:0 .125em;min-width:2em;padding:0 .5em;text-align:center}dl,table{margin:0 0 2em}ul.pagination li>.page.active{background-color:#0379c4;color:#fff}ul.pagination li>.page.active:hover{background-color:#f67878}ul.pagination li>.page.active:active{background-color:#f45c5c}ul.pagination li:first-child{padding-right:.75em}ul.pagination li:last-child{padding-left:.75em}@media screen and (max-width:480px){ul.pagination li:nth-child(n+2):nth-last-child(n+2){display:none}ul.pagination li:first-child{padding-right:0}}dl dt{display:block;margin:0 0 1em}dl dd{margin-left:2em}.table-wrapper{overflow-x:auto}table{border-collapse:collapse;border-spacing:0;width:100%}table tbody tr{border:1px solid rgba(210,215,217,.75);border-left:0;border-right:0}table tbody tr:nth-child(2n+1){background-color:rgba(230,235,237,.25)}table td{padding:.75em}table th{color:#3d4449;font-size:.9em;padding:0 .75em .75em;text-align:left}#menu ul a.opener:before,#menu ul span.opener:before,.toggle:before{-webkit-font-smoothing:antialiased;font-style:normal;font-weight:400}table thead{border-bottom:solid 2px rgba(210,215,217,.75)}table tfoot{border-top:solid 2px rgba(210,215,217,.75)}table.alt{border-collapse:separate}table.alt tbody tr td{border:1px solid rgba(210,215,217,.75);border-left-width:0;border-top-width:0}table.alt tbody tr td:first-child{border-left-width:1px}table.alt tbody tr:first-child td{border-top-width:1px}table.alt thead{border-bottom:0}table.alt tfoot{border-top:0}.button{cursor:pointer;font-size:1em;border:1px solid #0379C3;border-radius:.375em;padding:.375em}.mini-posts article{border-top:solid 1px rgba(210,215,217,.75);margin-top:2em;padding-top:2em}.mini-posts article .image{display:block;margin:0 0 1.5em}.mini-posts article .image amp-img{display:block;width:100%}.mini-posts article .ad-image amp-img{display:block;max-width:60%;margin:0 auto}.mini-posts article .ad-image-banner amp-img{display:block;max-width:100%;margin:0 auto}.mini-posts article:first-child{border-top:0;margin-top:0;padding-top:0}.mini-post-footer{display:inline-flex;align-items:center}.mini-post-footer p{font-size:.8em}.mini-post-footer .icons{padding-left:4em}.posts{display:-moz-flex;display:-webkit-flex;display:-ms-flex;display:flex;-moz-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 0 2em -6em;width:calc(100% + 6em)}.posts article{-moz-flex-grow:0;-webkit-flex-grow:0;-ms-flex-grow:0;flex-grow:0;-moz-flex-shrink:1;-webkit-flex-shrink:1;-ms-flex-shrink:1;flex-shrink:1;margin:0 0 6em 6em;position:relative;width:calc(33.33333% - 6em)}.posts article:after,.posts article:before{background:rgba(210,215,217,.75);content:'';position:absolute;display:block}.posts article:before{height:calc(100% + 6em);left:-3em;top:0;width:1px}.posts article:after{bottom:-3em;height:1px;right:0;width:calc(100% + 6em)}.posts article>:last-child{margin-bottom:0}.posts article .image{display:block;margin:0 0 2em}.posts article .image amp-img{display:block;width:100%}.ad-image amp-img,.posts article .ad-image amp-img{display:block;width:60%;margin:0 auto}amp-youtube{padding:1em}.post-footer p{font-size:.9em}.post-footer,.post-share{display:inline-flex;align-items:center}.post-share .icons{padding-left:1em}.post-footer .icons{padding-left:5em}.post-share ul li{padding:.4em .7em;background-color:#0379c4}.post-share ul li .icon{font-size:1.2em;color:#fff;border-radius:.375em}.post-footer ul li .icon{font-size:1em;color:#0379c4}@media screen and (min-width:1681px){.posts article:nth-child(3n+1):before,.posts article:nth-last-child(1):after,.posts article:nth-last-child(2):after,.posts article:nth-last-child(3):after{display:none}.posts article:nth-child(3n+1):after{width:100%}.posts article:nth-last-child(1),.posts article:nth-last-child(2),.posts article:nth-last-child(3){margin-bottom:0}.posts article:nth-last-child(1):before,.posts article:nth-last-child(2):before,.posts article:nth-last-child(3):before{height:100%}}@media screen and (max-width:1680px){.posts article{width:calc(50% - 6em)}.posts article:nth-last-child(3){margin-bottom:6em}}@media screen and (min-width:481px) and (max-width:1680px){.posts article:nth-child(2n+1):before,.posts article:nth-last-child(1):after,.posts article:nth-last-child(2):after{display:none}.posts article:nth-child(2n+1):after{width:100%}.posts article:nth-last-child(1),.posts article:nth-last-child(2){margin-bottom:0}.posts article:nth-last-child(1):before,.posts article:nth-last-child(2):before{height:100%}}@media screen and (max-width:736px){.posts{margin:0 0 2em -4.5em;width:calc(100% + 4.5em)}.posts article{margin:0 0 4.5em 4.5em;width:calc(50% - 4.5em)}.posts article:before{height:calc(100% + 4.5em);left:-2.25em}.posts article:after{bottom:-2.25em;width:calc(100% + 4.5em)}.posts article:nth-last-child(3){margin-bottom:4.5em}}@media screen and (max-width:480px){.posts,.posts article:after{width:100%}.posts article:before,.posts article:last-child:after{display:none}.posts{margin:0 0 2em}.posts article{margin:0 0 4.5em;width:100%}.posts article:last-child{margin-bottom:0}}#wrapper{display:-moz-flex;display:-webkit-flex;display:-ms-flex;display:flex;-moz-flex-direction:row-reverse;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;min-height:100vh}#main{-moz-flex-grow:1;-webkit-flex-grow:1;-ms-flex-grow:1;flex-grow:1;-moz-flex-shrink:1;-webkit-flex-shrink:1;-ms-flex-shrink:1;flex-shrink:1;width:100%}#sidebar,#sidebar>.inner{position:relative;width:26em}#main>.inner{padding:0 6em .1em;margin:0 auto;max-width:110em}#main>.inner>section{padding:6em 0 4em;border-top:solid 2px rgba(210,215,217,.75)}#main>.inner>section:first-of-type{border-top:0}@media screen and (max-width:1680px){#main>.inner{padding:0 5em .1em}#main>.inner>section{padding:5em 0 3em}}@media screen and (max-width:1280px){#main>.inner{padding:0 4em .1em}#main>.inner>section{padding:4em 0 2em}}@media screen and (max-width:736px){#main>.inner{padding:0 2em .1em}#main>.inner>section{padding:3em 0 1em}}#sidebar{-moz-flex-grow:0;-webkit-flex-grow:0;-ms-flex-grow:0;flex-grow:0;-moz-flex-shrink:0;-webkit-flex-shrink:0;-ms-flex-shrink:0;flex-shrink:0;background-color:#f5f6f7;font-size:.9em}#sidebar h2{font-size:1.38889em}#sidebar>.inner{padding:2.22222em 2.22222em 2.44444em}#sidebar>.inner>*{border-bottom:solid 2px rgba(210,215,217,.75);margin:0 0 3.5em;padding:0 0 3.5em}#sidebar>.inner>*>:last-child{margin-bottom:0}#sidebar>.inner>:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}#sidebar>.inner>.alt{background-color:#eff1f2;border-bottom:0;margin:-2.22222em 0 4.44444em -2.22222em;padding:2.22222em;width:calc(100% + 4.44444em)}.toggle{-moz-transition:left .5s ease;-webkit-transition:left .5s ease;-ms-transition:left .5s ease;transition:left .5s ease;border:0;display:block;height:7.5em;left:0;line-height:7.5em;outline:0;overflow:hidden;position:fixed;text-align:center;text-indent:7.5em;top:0;width:6em;z-index:10000}.toggle:before{content:'\f0c9';font-size:2rem;height:inherit;left:0;line-height:inherit;position:absolute;text-indent:0;top:0;width:inherit}#sidebar.inactive{margin-left:-26em}@media screen and (max-width:1680px){#sidebar{width:24em}#sidebar>.inner{padding:1.66667em 1.66667em 1.33333em;width:24em}#sidebar>.inner>.alt{margin:-1.66667em 0 3.33333em -1.66667em;padding:1.66667em;width:calc(100% + 3.33333em)}.toggle{height:6.25em;left:0;line-height:6.25em;text-indent:5em;width:5em}.toggle:before{font-size:1.5rem}#sidebar.inactive{margin-left:-24em}}@media screen and (max-width:1280px){#sidebar,#sidebar>.inner{height:100%;left:0;top:0}#sidebar{position:fixed;z-index:2147483647}#sidebar.inactive{box-shadow:none}#sidebar>.inner{-webkit-overflow-scrolling:touch;overflow-x:hidden;overflow-y:auto;position:absolute}#sidebar>.inner:after{content:'';display:block;height:4em;width:100%}.toggle{text-indent:6em;width:6em}.toggle:before{font-size:1.5rem;margin-left:-.4375em}body.is-loading #sidebar{display:none}}#banner,#header{display:-moz-flex;display:-webkit-flex;display:-ms-flex}@media screen and (max-width:736px){.toggle{text-indent:7.25em;width:7.25em}.toggle:before{color:#7f888f;margin-left:-.0625em;margin-top:-.25em;font-size:1.1rem;z-index:1}.toggle:after{background:rgba(222,225,226,.75);border-radius:.375em;content:'';height:3.5em;left:1em;position:absolute;top:1em;width:5em}}#header{display:flex;border-bottom:solid 5px #0379c4;padding:6em 0 1em;position:relative}#header>*{-moz-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;margin-bottom:0}#header .logo amp-img{width:90%}#header .icons{text-align:right}@media screen and (max-width:1680px){#header{padding-top:5em}}@media screen and (max-width:736px){#header{padding-top:6.5em}#header .logo{font-size:1.25em;margin:0}#header .icons{height:5em;line-height:5em;position:absolute;right:-.5em;top:0}}#banner{padding:6em 0 4em;display:flex}#banner h1{margin-top:-.125em}#banner .content{-moz-flex-grow:1;-webkit-flex-grow:1;-ms-flex-grow:1;flex-grow:1;-moz-flex-shrink:1;-webkit-flex-shrink:1;-ms-flex-shrink:1;flex-shrink:1;width:50%}#banner .image{-moz-flex-grow:0;-webkit-flex-grow:0;-ms-flex-grow:0;flex-grow:0;-moz-flex-shrink:0;-webkit-flex-shrink:0;-ms-flex-shrink:0;flex-shrink:0;display:block;margin:0 0 2em 4em;width:50%}#banner .image amp-img{width:100%}@media screen and (orientation:portrait){#banner{-moz-flex-direction:column-reverse;-webkit-flex-direction:column-reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}#banner h1 br{display:none}#banner .content{-moz-flex-grow:0;-webkit-flex-grow:0;-ms-flex-grow:0;flex-grow:0;-moz-flex-shrink:0;-webkit-flex-shrink:0;-ms-flex-shrink:0;flex-shrink:0;width:100%}#banner .image{-moz-flex-grow:0;-webkit-flex-grow:0;-ms-flex-grow:0;flex-grow:0;-moz-flex-shrink:0;-webkit-flex-shrink:0;-ms-flex-shrink:0;flex-shrink:0;margin:0 0 4em;height:25em;max-height:50vh;min-height:18em;width:100%}}@media screen and (orientation:portrait) and (max-width:480px){#banner .image{max-height:35vh}}#footer .copyright{color:#9fa3a6;font-size:.9em}#footer .copyright a{color:inherit}#menu ul{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;color:#3d4449;font-family:"Roboto Slab",serif;font-family:400;margin-bottom:0;padding:0;text-transform:uppercase}#menu ul a,#menu ul span{border-bottom:0;color:inherit;cursor:pointer;display:block;font-size:.9em;padding:.625em 0}#menu ul a:hover,#menu ul span:hover{color:#0379c4}#menu ul a.opener,#menu ul span.opener{-moz-transition:color .2s ease-in-out;-webkit-transition:color .2s ease-in-out;-ms-transition:color .2s ease-in-out;transition:color .2s ease-in-out;position:relative}#menu ul a.opener:before,#menu ul span.opener:before{-moz-osx-font-smoothing:grayscale;font-family:FontAwesome;text-transform:none;-moz-transition:color .2s ease-in-out,-moz-transform .2s ease-in-out;-webkit-transition:color .2s ease-in-out,-webkit-transform .2s ease-in-out;-ms-transition:color .2s ease-in-out,-ms-transform .2s ease-in-out;transition:color .2s ease-in-out,transform .2s ease-in-out;color:#9fa3a6;content:'\f078';position:absolute;right:0}#menu ul a.opener:hover:before,#menu ul span.opener:hover:before{color:#0379c4}#menu ul a.opener.active+ul,#menu ul span.opener.active+ul{display:block}#menu ul a.opener.active:before,#menu ul span.opener.active:before{-moz-transform:rotate(-180deg);-webkit-transform:rotate(-180deg);-ms-transform:rotate(-180deg);transform:rotate(-180deg)}#menu>ul>li{border-top:solid 1px rgba(210,215,217,.75);margin:.5em 0 0;padding:.5em 0 0}#menu>ul>li>ul{color:#9fa3a6;display:none;margin:.5em 0 1.5em;padding-left:1em}#menu>ul>li>ul a,#menu>ul>li>ul span{font-size:.8em}#menu>ul>li>ul>li{margin:.125em 0 0;padding:.125em 0 0}#menu>ul>li:first-child{border-top:0;margin-top:0;padding-top:0}
+	    </style>
+<!-- 	    <link rel="stylesheet" href="\amp\amp-css\main.css">
+ -->		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script async src="https://cdn.ampproject.org/v0.js"></script>
+		<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+		<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+		<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+		<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+		<script type="application/ld+json">
+			{
+			 "@context": "http://schema.org",
+			 "@type": "NewsArticle",
+			 "mainEntityOfPage":{
+			   "@type":"WebPage",
+			   "@id":"https://manolisal.github.io/2018/1/HTTPS-explained-with-carrier-pigeons/index.html"
+			 },
+			 "headline": "HTTPS explained with carrier pigeons",
+			 "image": {
+			   "@type": "ImageObject",
+			   "url": "https://manolisal.github.io/2018/1/HTTPS-explained-with-carrier-pigeons/thumb.png",
+			   "height": 256,
+			   "width": 416
+			 },
+			 "datePublished": "2018-12-08T08:00:00+08:00",
+			 "dateModified": "2018-12-08T09:20:00+08:00",
+			 "author": {
+			   "@type": "Person",
+			   "name": "John Doe"
+			 },
+			 "publisher": {
+			   "@type": "Organization",
+			   "name": "TheNews",
+			   "logo": {
+			     "@type": "ImageObject",
+			     "url": "https://manolisal.github.io/images/logo.jpg",
+			     "width": 600,
+			     "height": 60
+			   }
+			 },
+			 "description": "HTTPS explained with carrier pigeons"
+			}
+		</script>
+		<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+		  (adsbygoogle = window.adsbygoogle || []).push({
+		    google_ad_client: "ca-pub-4180507943274363",
+		    enable_page_level_ads: true
+		  });
+		</script> -->
+	</head>
+	<body>
+		<amp-sidebar id="sidebar" layout="nodisplay" side="left">
+			<div class="inner">
+				<section id="search" class="alt">
+					<form method="post" target='_blank' action-xhr='https://test.com'>
+						<input type="text" name="query" id="query" placeholder="Search">
+					</form>
+				</section>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="#">Questionnaire</a></li>
+					</ul>
+				</nav>
+
+			    <section>
+					<header class="major">
+						<h2>Sponsors</h2>
+					</header>
+					<div class="mini-posts">
+						<article>
+							<a href="#" class="ad-image"><amp-img src="../../../images/ads125.png" width= "125" height="125" layout=responsive alt=""></amp-img></a>
+						</article>
+						<article>
+							<a href="#" class="ad-image"><amp-img src="../../../images/ads125.png" width= "125" height="125" layout=responsive alt=""></amp-img></a>		
+						</article>
+						<article>
+							<a href="#" class="ad-image"><amp-img src="../../../images/ads125.png" width= "125" height="125" layout=responsive alt=""></amp-img></a>								
+						</article>
+					</div>
+				</section>
+
+				<section>
+					<header class="major">
+						<h2>Top Stories</h2>
+					</header>
+					<div class="mini-posts">
+						<article>
+							<a href="2017/12/Who-owns-the-internet" class="image"><amp-img src="/2017/12/Who-owns-the-internet/thumb.png" width= "416" height="256" layout=responsive alt=""></amp-img></a>
+							<h3><a href='2017/12/Who-owns-the-internet'>Who owns the internet?</a></h3>
+							<p>This week, the Federal Communications Commission will vote on the future of net neutrality.</p>
+							<ul class="actions">
+								<li><a href="2017/12/Who-owns-the-internet" class="button">Read More</a></li>
+							</ul>
+							<div class='post-footer'>
+								<p>Posted <span class='clr'>30 mins</span> ago</p>
+								<ul class="icons">
+									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+								</ul>
+							</div>
+						</article>
+						<article>
+							<a href="/2017/12/What-Is-Bitcoin-Really-Worth-Dont-Even-Ask/" class="image"><amp-img src="/2017/12/What-Is-Bitcoin-Really-Worth-Dont-Even-Ask/thumb.jpg" width= "416" height="256" layout=responsive alt=""></amp-img></a>
+							<h3><a href='#'>What Is Bitcoin Really Worth? Don’t Even Ask</a></h3>
+							<p>Dabbling in Bitcoin lies somewhere between gambling and investing.</p>
+							<ul class="actions">
+								<li><a href="/2017/12/What-Is-Bitcoin-Really-Worth-Dont-Even-Ask/" class="button">Read More</a></li>
+							</ul>
+							<div class='post-footer'>
+								<p>Posted <span class='clr'>30 mins</span> ago</p>
+								<ul class="icons">
+									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+								</ul>
+							</div>
+						</article>
+						<article>
+							<a href="\2017\12\Hard-Coding-Concepts-Explained-with-Simple-Real-life-Analogies" class="image"><amp-img src="\2017\12\Hard-Coding-Concepts-Explained-with-Simple-Real-life-Analogies/thumb.png" width= "416" height="256" layout=responsive alt=""></amp-img></a>
+							<h3><a href='\2017\12\Hard-Coding-Concepts-Explained-with-Simple-Real-life-Analogies'>Hard Coding Concepts Explained with Simple Real-life Analogies</a></h3>
+							<p>How to explain coding concepts like streams, promises, linting, and declarative programming to a 5-year-old.</p>
+							<ul class="actions">
+								<li><a href="\2017\12\Hard-Coding-Concepts-Explained-with-Simple-Real-life-Analogies" class="button">Read More</a></li>
+							</ul>
+							<div class='post-footer'>
+								<p>Posted <span class='clr'>30 mins</span> ago</p>
+								<ul class="icons">
+									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+								</ul>
+							</div>
+						</article>
+					</div>
+					
+				</section>
+
+				<section>
+					<header class="major">
+						<h2>Subscribe</h2>
+					</header>
+					<p>Become part of our fanbase to receive the latest news on web development and optimization, by subcribing to our news letter. <b>We will NOT spam you, we promise :)</b></p>
+					<form method="post" target='_blank' action-xhr='https://test.com'>
+						<input type="text" name="query" id="query" placeholder="Your email">
+					</form>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">&copy; TheNews. All rights reserved.</p>
+				</footer>
+			</div>
+		</amp-sidebar>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<div id="main">
+					<div class="inner">
+
+						<header id="header">
+							<a class="toggle" on='tap:sidebar.toggle'>Toggle</a>
+							<a href="../../../" class="logo"><amp-img src='../../../images/logo.jpg' width= "600" height="60" layout=responsive alt=""></amp-img></a>
+							<ul class="icons">
+								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							</ul>
+						</header>
+
+					<!-- Content -->
+						<section>
+							<header class="main">
+								<h2>HTTPS explained with carrier pigeons</h2>
+							</header>
+
+							<span class="image main"><amp-img src="banner.png" width= "1600" height="852" layout=responsive alt=""></amp-img></span>
+
+                            <p class='inf'>By <a href="#">John Doe</a> | <span>January 11 2018 12:08</span></p>
+                            <hr class="major" />
+
+							<p>Cryptography can be a hard subject to understand. It’s full of mathematical proofs. But unless you are actually developing cryptographic systems, much of that complexity is not necessary to understand what is going on at a high level.</p>
+
+							<p>If you opened this article hoping to create the next HTTPS protocol, I’m sorry to say that pigeons won’t be enough. Otherwise, brew some coffee and enjoy the article.</p>
+							<h2>Alice, Bob and … pigeons?</h2>
+							<p>Any activity you do on the Internet (reading this article, buying stuff on Amazon, uploading cat pictures) comes down to sending and receiving messages to and from a server.</p>
+
+							<p>This can be a bit abstract so let’s imagine that those messages were delivered by <strong>carrier pigeons</strong>. I know that this may seem very arbitrary, but trust me HTTPS works the same way, albeit a lot faster.</p>
+
+							<p>Also instead of talking about servers, clients and hackers, we will talk about Alice, Bob and Mallory. If this isn’t your first time trying to understand cryptographic concepts you will recognize those names, because they are widely used in technical literature.</p>
+							
+                             <amp-ad width=125 height=125
+							      type="adsense"
+							      data-ad-client="ca-pub-4180507943274363"
+							      data-ad-slot="7046626912">
+							      <amp-img placeholder src="../../../images/ads125.png" alt="" width= "125" height="125" layout=responsive ></amp-img>
+							</amp-ad>
+
+                            <h2>A first naive communication</h2>
+							<p>If Alice wants to send a message to Bob, she attaches the message on the carrier pigeon’s leg and sends it to Bob. Bob receives the message, reads it and it’s all is good.</p>
+
+							<p>But what if Mallory intercepted Alice’s pigeon in flight and changed the message? Bob would have no way of knowing that the message that was sent by Alice was modified in transit.</p>
+
+							<p>This is how HTTP works. Pretty scary right? I wouldn’t send my bank credentials over HTTP and neither should you.</p>
+
+							<h2>A secret code</h2>
+							<p>Now what if Alice and Bob are very crafty. They agree that they will write their messages using a secret code. They will shift each letter by 3 positions in the alphabet. For example D → A, E → B, F → C. The plain text message “secret message” would be “pbzobq jbppxdb”.</p>
+
+							<p>Now if Mallory intercepts the pigeon he won’t be able to change the message into something meaningful nor understand what it says, because he doesn’t know the code. But Bob can simply apply the code in reverse and decrypt the message where A → D, B → E, C → F. The cipher text “pbzobq jbppxdb” would be decrypted back to “secret message”.</p>
+
+							<p>Success!</p>
+
+							<p>This is called <strong>symmetric key cryptography</strong>, because if you know how to encrypt a message you also know how to decrypt it.</p>
+
+							<p>The code I described above is commonly known as the <strong>Caesar cipher</strong>. In real life, we use fancier and more complex codes, but the main idea is the same.</p>
+
+							 <amp-ad width=125 height=125
+							      type="adsense"
+							      data-ad-client="ca-pub-4180507943274363"
+							      data-ad-slot="7046626912">
+							      <amp-img placeholder src="../../../images/ads125.png" alt="" width= "125" height="125" layout=responsive ></amp-img>
+							</amp-ad>
+
+							<h2>How do we decide the key?</h2>
+							<p>Symmetric key cryptography is very secure if no one apart from the sender and receiver know what key was used. In the Caesar cipher, <strong>the key is an offset</strong> of how many letters we shift each letter by. In our example we used an offset of 3, but could have also used 4 or 12.</p>
+
+							<p>The issue is that if Alice and Bob don’t meet before starting to send messages with the pigeon, they would have no way to establish a key securely. If they send the key in the message itself, Mallory would intercept the message and discover the key. This would allow Mallory to then read or change the message as he wishes before and after Alice and Bob start to encrypt their messages.</p>
+
+							<p>This is the typical example of a <strong>Man in the Middle Attack</strong> and the only way to avoid it is to change the encryption system all together.</p>
+
+							<h2>How do we decide the key?</h2>
+							<p>Symmetric key cryptography is very secure if no one apart from the sender and receiver know what key was used. In the Caesar cipher, the key is an offset of how many letters we shift each letter by. In our example we used an offset of 3, but could have also used 4 or 12.</p>
+
+							<p>The issue is that if Alice and Bob don’t meet before starting to send messages with the pigeon, they would have no way to establish a key securely. If they send the key in the message itself, Mallory would intercept the message and discover the key. This would allow Mallory to then read or change the message as he wishes before and after Alice and Bob start to encrypt their messages.</p>
+
+							<p>This is the typical example of a Man in the Middle Attack and the only way to avoid it is to change the encryption system all together.</p>
+
+							 <amp-ad width=125 height=125
+							      type="adsense"
+							      data-ad-client="ca-pub-4180507943274363"
+							      data-ad-slot="7046626912">
+							      <amp-img placeholder src="../../../images/ads125.png" alt="" width= "125" height="125" layout=responsive ></amp-img>
+							</amp-ad>
+
+							<h2>Pigeons carrying boxes</h2>
+							<p>So Alice and Bob come up with an even better system. When Alice wants to send Bob a message she will follow the procedure below:</p>
+							<ul>
+								<li>Alice sends a pigeon to Bob without any message.</li>
+								<li>Bob sends the pigeon back carrying a box with an open lock, but keeping the key.</li>
+								<li>Alice puts the message in the box, closes the locks and sends the box to Bob.</li>
+								<li>Bob receives the box, opens it with the key and reads the message.</li>
+							</ul>
+							<p>This way Mallory can’t change the message by intercepting the pigeon, because he doesn’t have the key. The same process is followed when Bob wants to send Alice a message.</p>
+
+							<p>Alice and Bob just used what is commonly known as <strong>asymmetric key cryptography</strong>. It’s called asymmetric, because even if you can encrypt a message (lock the box) you can’t decrypt it (open a closed box).
+							In technical speech the box is known as the <strong>public key</strong> and the key to open it is known as the <strong>private key</strong>.</p>
+
+							<h2>How do I trust the box?</h2>
+							<p>If you paid attention you may have noticed that we still have a problem. When Bob receives that open box how can he be sure that it came from Alice and that Mallory didn’t intercept the pigeon and changed the box with one he has the key to?</p>
+
+							<p>Alice decides that she will sign the box, this way when Bob receives the box he checks the signature and knows that it was Alice who sent the box.</p>
+
+							<p>Some of you may be thinking, how would Bob identify Alice’s signature in the first place? Good question. Alice and Bob had this problem too, so they decided that, instead of Alice signing the box, Ted will sign the box.</p>
+
+							<p>Who is Ted? Ted is a very famous, well known and trustworthy guy. Ted gave his signature to everyone and everybody trusts that he will only sign boxes for legitimate people.</p>
+
+							<p>Ted will only sign an Alice box if he’s sure that the one asking for the signature is Alice. So Mallory cannot get an Alice box signed by Ted on behalf of her as Bob will know that the box is a fraud because Ted only signs boxes for people after verifying their identity.</p>
+
+							<p>Ted in technical terms is commonly referred to as a <strong>Certification Authority</strong> and the browser you are reading this article with comes packaged with the signatures of various Certification Authorities.</p>
+
+							<p>So when you connect to a website for the first time you trust its box because you trust Ted and Ted tells you that the box is legitimate.</p>
+
+							 <amp-ad width=125 height=125
+							      type="adsense"
+							      data-ad-client="ca-pub-4180507943274363"
+							      data-ad-slot="7046626912">
+							      <amp-img placeholder src="../../../images/ads125.png" alt="" width= "125" height="125" layout=responsive ></amp-img>
+							</amp-ad>
+
+							<h2>Boxes are heavy</h2>
+							<p>Alice and Bob now have a reliable system to communicate, but they realize that pigeons carrying boxes are slower than the ones carrying only the message.</p>
+
+							<p>They decide that they will use the box method (asymmetric cryptography) only to choose a key to encrypt the message using symmetric cryptography with (remember the Caesar cipher?).</p>
+
+							<p>This way they get the best of both worlds. The reliability of asymmetric cryptography and the efficiency of symmetric cryptography.</p>
+
+							<p>In the real world there aren’t slow pigeons, but nonetheless encrypting messages using asymmetric cryptography is slower than using symmetric cryptography, so we only use it to exchange the encryption keys.</p>
+
+							<p>Now you know how <strong>HTTPS</strong> works and your coffee should also be ready. Go drink it you deserved it 😉</p>
+
+							                                    
+                            <p><span><strong>Source : </strong><a>https://medium.freecodecamp.org/https-explained-with-carrier-pigeons-7029d2193351</a></span></p>
+                 
+                                             
+							<div class='post-share'>
+								<p><strong>Share this story :</strong></p>
+								<ul class="icons">
+									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+								</ul>
+							</div>
+						</section>
+
+					</div>
+				</div>
+			</div>
+	</body>
+</html>

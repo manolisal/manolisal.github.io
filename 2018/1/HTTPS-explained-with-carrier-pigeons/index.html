@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+
+<html lang='en'>
+	<head>
+		<title>HTTPS explained with carrier pigeons</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html;"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="keywords" content="manolis.github.io, manolisal.github, manolisal, HTTPS, explained, with, carrier, pigeons, amp, google, articles, article">
+		<link rel="amphtml" href="https://manolisal.github.io/2018/1/HTTPS-explained-with-carrier-pigeons/index.amp.html">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+		  (adsbygoogle = window.adsbygoogle || []).push({
+		    google_ad_client: "ca-pub-4180507943274363",
+		    enable_page_level_ads: true
+		  });
+		</script>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../../../" class="logo"><img src='../../../images/logo.jpg'/></a>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h2>HTTPS explained with carrier pigeons</h2>
+									</header>
+
+									<span class="image main"><img src="banner.png" alt="" /></span>
+
+                                    <p class='inf'>By <a href="#">John Doe</a> | <span>January 11 2018 12:08</span></p>
+                                    <hr class="major" />
+                                    <p>Cryptography can be a hard subject to understand. It’s full of mathematical proofs. But unless you are actually developing cryptographic systems, much of that complexity is not necessary to understand what is going on at a high level.</p>
+
+									<p>If you opened this article hoping to create the next HTTPS protocol, I’m sorry to say that pigeons won’t be enough. Otherwise, brew some coffee and enjoy the article.</p>
+									<h2>Alice, Bob and … pigeons?</h2>
+									<p>Any activity you do on the Internet (reading this article, buying stuff on Amazon, uploading cat pictures) comes down to sending and receiving messages to and from a server.</p>
+
+									<p>This can be a bit abstract so let’s imagine that those messages were delivered by <strong>carrier pigeons</strong>. I know that this may seem very arbitrary, but trust me HTTPS works the same way, albeit a lot faster.</p>
+
+									<p>Also instead of talking about servers, clients and hackers, we will talk about Alice, Bob and Mallory. If this isn’t your first time trying to understand cryptographic concepts you will recognize those names, because they are widely used in technical literature.</p>
+									
+                                    <p><a href="#" class="ad-image"><img src="../../../images/ads125.png" alt="" /></a></p>
+
+                                    <h2>A first naive communication</h2>
+									<p>If Alice wants to send a message to Bob, she attaches the message on the carrier pigeon’s leg and sends it to Bob. Bob receives the message, reads it and it’s all is good.</p>
+
+									<p>But what if Mallory intercepted Alice’s pigeon in flight and changed the message? Bob would have no way of knowing that the message that was sent by Alice was modified in transit.</p>
+
+									<p>This is how HTTP works. Pretty scary right? I wouldn’t send my bank credentials over HTTP and neither should you.</p>
+
+									<h2>A secret code</h2>
+									<p>Now what if Alice and Bob are very crafty. They agree that they will write their messages using a secret code. They will shift each letter by 3 positions in the alphabet. For example D → A, E → B, F → C. The plain text message “secret message” would be “pbzobq jbppxdb”.</p>
+
+									<p>Now if Mallory intercepts the pigeon he won’t be able to change the message into something meaningful nor understand what it says, because he doesn’t know the code. But Bob can simply apply the code in reverse and decrypt the message where A → D, B → E, C → F. The cipher text “pbzobq jbppxdb” would be decrypted back to “secret message”.</p>
+
+									<p>Success!</p>
+
+									<p>This is called <strong>symmetric key cryptography</strong>, because if you know how to encrypt a message you also know how to decrypt it.</p>
+
+									<p>The code I described above is commonly known as the <strong>Caesar cipher</strong>. In real life, we use fancier and more complex codes, but the main idea is the same.</p>
+
+									<p><a href="#" class="ad-image"><img src="../../../images/ads125.png" alt="" /></a></p>
+
+									<h2>How do we decide the key?</h2>
+									<p>Symmetric key cryptography is very secure if no one apart from the sender and receiver know what key was used. In the Caesar cipher, <strong>the key is an offset</strong> of how many letters we shift each letter by. In our example we used an offset of 3, but could have also used 4 or 12.</p>
+
+									<p>The issue is that if Alice and Bob don’t meet before starting to send messages with the pigeon, they would have no way to establish a key securely. If they send the key in the message itself, Mallory would intercept the message and discover the key. This would allow Mallory to then read or change the message as he wishes before and after Alice and Bob start to encrypt their messages.</p>
+
+									<p>This is the typical example of a <strong>Man in the Middle Attack</strong> and the only way to avoid it is to change the encryption system all together.</p>
+
+									<h2>How do we decide the key?</h2>
+									<p>Symmetric key cryptography is very secure if no one apart from the sender and receiver know what key was used. In the Caesar cipher, the key is an offset of how many letters we shift each letter by. In our example we used an offset of 3, but could have also used 4 or 12.</p>
+
+									<p>The issue is that if Alice and Bob don’t meet before starting to send messages with the pigeon, they would have no way to establish a key securely. If they send the key in the message itself, Mallory would intercept the message and discover the key. This would allow Mallory to then read or change the message as he wishes before and after Alice and Bob start to encrypt their messages.</p>
+
+									<p>This is the typical example of a Man in the Middle Attack and the only way to avoid it is to change the encryption system all together.</p>
+
+									<p><a href="#" class="ad-image"><img src="../../../images/ads125.png" alt="" /></a></p>
+
+									<h2>Pigeons carrying boxes</h2>
+									<p>So Alice and Bob come up with an even better system. When Alice wants to send Bob a message she will follow the procedure below:</p>
+									<ul>
+										<li>Alice sends a pigeon to Bob without any message.</li>
+										<li>Bob sends the pigeon back carrying a box with an open lock, but keeping the key.</li>
+										<li>Alice puts the message in the box, closes the locks and sends the box to Bob.</li>
+										<li>Bob receives the box, opens it with the key and reads the message.</li>
+									</ul>
+									<p>This way Mallory can’t change the message by intercepting the pigeon, because he doesn’t have the key. The same process is followed when Bob wants to send Alice a message.</p>
+
+									<p>Alice and Bob just used what is commonly known as <strong>asymmetric key cryptography</strong>. It’s called asymmetric, because even if you can encrypt a message (lock the box) you can’t decrypt it (open a closed box).
+									In technical speech the box is known as the <strong>public key</strong> and the key to open it is known as the <strong>private key</strong>.</p>
+
+									<h2>How do I trust the box?</h2>
+									<p>If you paid attention you may have noticed that we still have a problem. When Bob receives that open box how can he be sure that it came from Alice and that Mallory didn’t intercept the pigeon and changed the box with one he has the key to?</p>
+
+									<p>Alice decides that she will sign the box, this way when Bob receives the box he checks the signature and knows that it was Alice who sent the box.</p>
+
+									<p>Some of you may be thinking, how would Bob identify Alice’s signature in the first place? Good question. Alice and Bob had this problem too, so they decided that, instead of Alice signing the box, Ted will sign the box.</p>
+
+									<p>Who is Ted? Ted is a very famous, well known and trustworthy guy. Ted gave his signature to everyone and everybody trusts that he will only sign boxes for legitimate people.</p>
+
+									<p>Ted will only sign an Alice box if he’s sure that the one asking for the signature is Alice. So Mallory cannot get an Alice box signed by Ted on behalf of her as Bob will know that the box is a fraud because Ted only signs boxes for people after verifying their identity.</p>
+
+									<p>Ted in technical terms is commonly referred to as a <strong>Certification Authority</strong> and the browser you are reading this article with comes packaged with the signatures of various Certification Authorities.</p>
+
+									<p>So when you connect to a website for the first time you trust its box because you trust Ted and Ted tells you that the box is legitimate.</p>
+
+									<p><a href="#" class="ad-image"><img src="../../../images/ads125.png" alt="" /></a></p>
+
+									<h2>Boxes are heavy</h2>
+									<p>Alice and Bob now have a reliable system to communicate, but they realize that pigeons carrying boxes are slower than the ones carrying only the message.</p>
+
+									<p>They decide that they will use the box method (asymmetric cryptography) only to choose a key to encrypt the message using symmetric cryptography with (remember the Caesar cipher?).</p>
+
+									<p>This way they get the best of both worlds. The reliability of asymmetric cryptography and the efficiency of symmetric cryptography.</p>
+
+									<p>In the real world there aren’t slow pigeons, but nonetheless encrypting messages using asymmetric cryptography is slower than using symmetric cryptography, so we only use it to exchange the encryption keys.</p>
+
+									<p>Now you know how <strong>HTTPS</strong> works and your coffee should also be ready. Go drink it you deserved it 😉</p>
+
+									                                    
+                                    <p><span><strong>Source : </strong><a>https://medium.freecodecamp.org/https-explained-with-carrier-pigeons-7029d2193351</a></span></p>
+
+									<div class='post-share'>
+										<p><strong>Share this story :</strong></p>
+										<ul class="icons">
+											<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										</ul>
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="../../../">Home</a></li>
+										<li><a href="../../../contact.html">Contact</a></li>
+										<li><a href="../../../about.html">About Us</a></li>
+										<li><a href="../../../questionnaire.html">Questionnaire</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+							    <section>
+									<header class="major">
+										<h2>Sponsors</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="ad-image"><img src="../../../images/ads125.png" alt="" /></a>
+										</article>
+										<article>
+											<a href="#" class="ad-image"><img src="../../../images/ads125.png" alt="" /></a>		
+										</article>
+										<article>
+											<a href="#" class="ad-image"><img src="../../../images/ads125.png" alt="" /></a>								
+										</article>
+									</div>
+								</section>
+
+								<section>
+									<header class="major">
+										<h2>Top Stories</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="https://manolisal.github.io/2017/12/Who-owns-the-internet" class="image"><img src="/2017/12/Who-owns-the-internet/thumb.png" alt="" /></a>
+											<h3><a href='https://manolisal.github.io/2017/12/Who-owns-the-internet'>Who owns the internet?</a></h3>
+											<p>This week, the Federal Communications Commission will vote on the future of net neutrality.</p>
+											<ul class="actions">
+												<li><a href="https://manolisal.github.io/2017/12/Who-owns-the-internet" class="button">Read More</a></li>
+											</ul>
+											<div class='post-footer'>
+												<p>Posted <span class='clr'>30 mins</span> ago</p>
+												<ul class="icons">
+													<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+													<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+													<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<a href="https://manolisal.github.io/2017/12/What-Is-Bitcoin-Really-Worth-Dont-Even-Ask" class="image"><img src="https://manolisal.github.io/2017/12/What-Is-Bitcoin-Really-Worth-Dont-Even-Ask/thumb.jpg" alt="" /></a>
+											<h3><a href='https://manolisal.github.io/2017/12/What-Is-Bitcoin-Really-Worth-Dont-Even-Ask'>What Is Bitcoin Really Worth? Don’t Even Ask</a></h3>
+											<p>Dabbling in Bitcoin lies somewhere between gambling and investing.</p>
+											<ul class="actions">
+												<li><a href="https://manolisal.github.io/2017/12/What-Is-Bitcoin-Really-Worth-Dont-Even-Ask/" class="button">Read More</a></li>
+											</ul>
+											<div class='post-footer'>
+												<p>Posted <span class='clr'>30 mins</span> ago</p>
+												<ul class="icons">
+													<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+													<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+													<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<a href="https://manolisal.github.io/2017/12/Hard-Coding-Concepts-Explained-with-Simple-Real-life-Analogies" class="image"><img src="https://manolisal.github.io/2017/12/Hard-Coding-Concepts-Explained-with-Simple-Real-life-Analogies/thumb.png" alt="" /></a>
+											<h3><a href='https://manolisal.github.io/2017/12/Hard-Coding-Concepts-Explained-with-Simple-Real-life-Analogies'>Hard Coding Concepts Explained with Simple Real-life Analogies</a></h3>
+											<p>How to explain coding concepts like streams, promises, linting, and declarative programming to a 5-year-old.</p>
+											<ul class="actions">
+												<li><a href="https://manolisal.github.io/2017/12/Hard-Coding-Concepts-Explained-with-Simple-Real-life-Analogies" class="button">Read More</a></li>
+											</ul>
+											<div class='post-footer'>
+												<p>Posted <span class='clr'>30 mins</span> ago</p>
+												<ul class="icons">
+													<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+												    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+													<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+												</ul>
+											</div>
+										</article>
+									</div>
+									
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Subscribe</h2>
+									</header>
+									<p>Become part of our fanbase to receive the latest news on web development and optimization, by subcribing to our news letter. <strong>We will NOT spam you, we promise :)</strong></p>
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Your email">
+									</form>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; TheNews. All rights reserved.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../../assets/js/jquery.min.js"></script>
+			<script src="../../../assets/js/skel.min.js"></script>
+			<script src="../../../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../../../assets/js/main.js"></script>
+
+	</body>
+</html>
