@@ -11,13 +11,6 @@ PRIORITIES:
 ------------Development-----------
 
 1) Find 20-30 articles/videos about web development. (H)
-
-2) Create HTML5 pages
-
-	i) About US (L)
-	ii) Contact (L)
-
-3) Create AMP pages for all articles (H)
 	
 
 4) Clear unecessary css code (L)
