@@ -24,8 +24,7 @@
 		<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 		<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 		<script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
-		<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
-		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+		
 		<script type="application/ld+json">
 			{
 			 "@context": "http://schema.org",
@@ -60,21 +59,15 @@
 			 "description": "Data analysis of Game of Thrones determines who really is the main character"
 			}
 		</script>
-		<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<script>
-		  (adsbygoogle = window.adsbygoogle || []).push({
-		    google_ad_client: "ca-pub-4180507943274363",
-		    enable_page_level_ads: true
-		  });
-		</script> -->
+		<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 	</head>
 	<body>
 		<amp-sidebar id="sidebar" layout="nodisplay" side="left">
 			<div class="inner">
 				<section id="search" class="alt">
-					<form method="post" target='_blank' action-xhr='https://test.com'>
+					<amp-form method="post" target='_blank' action-xhr='https://test.com'>
 						<input type="text" name="query" id="query" placeholder="Search">
-					</form>
+					</amp-form>
 				</section>
 
 				<!-- Menu -->
@@ -95,15 +88,30 @@
 						<h2>Sponsors</h2>
 					</header>
 					<div class="mini-posts">
-						<article>
-							<a href="#" class="ad-image"><amp-img src="../../../images/ads125.png" width= "125" height="125" layout=responsive alt=""></amp-img></a>
-						</article>
-						<article>
-							<a href="#" class="ad-image"><amp-img src="../../../images/ads125.png" width= "125" height="125" layout=responsive alt=""></amp-img></a>		
-						</article>
-						<article>
-							<a href="#" class="ad-image"><amp-img src="../../../images/ads125.png" width= "125" height="125" layout=responsive alt=""></amp-img></a>								
-						</article>
+						<amp-ad width=125 height=125
+						      type="adsense"
+						      data-ad-client="ca-pub-4180507943274363"
+						      data-ad-slot="7046626912"
+						      data-slot="/4119129/doesnt-exist">
+						      <amp-img placeholder src="../../../images/ads125.png" alt="" width= "125" height="125" layout=responsive ></amp-img>								      
+                              <amp-img fallback src="../../../images/ads125.png" alt="" width= "125" height="125" layout=responsive ></amp-img>
+						</amp-ad>
+						<amp-ad width=125 height=125
+						      type="adsense"
+						      data-ad-client="ca-pub-4180507943274363"
+						      data-ad-slot="7046626912"
+						      data-slot="/4119129/doesnt-exist">
+						      <amp-img placeholder src="../../../images/ads125.png" alt="" width= "125" height="125" layout=responsive ></amp-img>								      
+                              <amp-img fallback src="../../../images/ads125.png" alt="" width= "125" height="125" layout=responsive ></amp-img>
+						</amp-ad>
+						<amp-ad width=125 height=125
+						      type="adsense"
+						      data-ad-client="ca-pub-4180507943274363"
+						      data-ad-slot="7046626912"
+						      data-slot="/4119129/doesnt-exist">
+						      <amp-img placeholder src="../../../images/ads125.png" alt="" width= "125" height="125" layout=responsive ></amp-img>								      
+                              <amp-img fallback src="../../../images/ads125.png" alt="" width= "125" height="125" layout=responsive ></amp-img>
+						</amp-ad>
 					</div>
 				</section>
 
@@ -143,9 +151,9 @@
 						<h2>Subscribe</h2>
 					</header>
 					<p>Become part of our fanbase to receive the latest news on web development and optimization, by subcribing to our news letter. <b>We will NOT spam you, we promise :)</b></p>
-					<form method="post" target='_blank' action-xhr='https://test.com'>
+					<amp-form method="post" target='_blank' action-xhr='https://test.com'>
 						<input type="text" name="query" id="query" placeholder="Your email">
-					</form>
+					</amp-form>
 				</section>
 
 			<!-- Footer -->
