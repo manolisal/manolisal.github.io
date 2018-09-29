@@ -21,7 +21,7 @@
 		var	$window = $(window),
 			$head = $('head'),
 			$body = $('body');
-			$wrapper = $('.article-wrapper');
+			$wrapper = $('#wrapper');
 		// Disable animations/transitions ...
 
 			// ... until the page has loaded.
