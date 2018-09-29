@@ -26,11 +26,9 @@
 
 			// ... until the page has loaded.
 				$body.addClass('is-loading');
-				$wrapper.addClass('hidden');
 				$window.on('load', function() {
 					setTimeout(function() {
 						$body.removeClass('is-loading');
-						$wrapper.removeClass('hidden');
 					}, 100);
 				});
 
