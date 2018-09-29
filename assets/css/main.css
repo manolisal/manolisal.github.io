@@ -47,7 +47,9 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
-
+	.hidden {
+		display:none !important;
+	}
 /* Box Model */
 
 	*, *:before, *:after {
