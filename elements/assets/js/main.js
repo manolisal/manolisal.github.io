@@ -30,7 +30,7 @@
 				$window.on('load', function() {
 					setTimeout(function() {
 						$body.removeClass('is-loading');
-					}, 100);
+					}, 3000);
 				});
 
 			// ... when resizing.
