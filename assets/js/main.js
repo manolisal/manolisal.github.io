@@ -31,7 +31,7 @@
 					setTimeout(function() {
 						$body.removeClass('is-loading');
 						$wrapper.removeClass('hidden');
-					}, 3000);
+					}, 2000);
 				});
 
 			// ... when resizing.
